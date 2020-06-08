@@ -51,8 +51,8 @@ require_once 'vendor/autoload.php';   php>
 							<li class="active"><a href="adicao.php">Adição</a></li>
 						</ul>
 					</li>
-					<li class="active"><a href="contato.html">Contato</a></li>
-					<li><a class="btn" href="portal-aluno.html">Portal do Aluno</a></li>
+					<li class="active"><a href="contato.php">Contato</a></li>
+					<li><a class="btn" href="portal-aluno.php">Portal do Aluno</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
