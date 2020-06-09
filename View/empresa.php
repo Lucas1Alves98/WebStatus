@@ -65,7 +65,7 @@ require_once 'vendor/autoload.php';   php>
 	<div class="container">
 
 		<ol class="breadcrumb">
-			<li><a href="index.html">Início</a></li>
+			<li><a href="index.php">Início</a></li>
 			<li class="active">Empresa</li>
 		</ol>
 

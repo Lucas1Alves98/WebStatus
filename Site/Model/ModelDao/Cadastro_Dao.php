@@ -4,6 +4,9 @@ namespace Site\Model\ModelDao;
 require_once 'vendor/autoload.php';   
 
 
+
+
+
 $obj = new \Site\Model\ModelBean\Cadastro_Bean();
 $conexao = new \Site\Model\ModelDao\Conexao();
 

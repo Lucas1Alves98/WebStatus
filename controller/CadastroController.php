@@ -1,10 +1,8 @@
 <?php
-namespace Site\Controller;
-require_once 'vendor/autoload.php';   
-require_once'../Model/ModelBean/Cadastro_Bean.php';
-require_once '../Model/ModelDao/Conexao.php';
 
-
+require_once '../model/modelDao/Conexao.php';
+require_once '../model/modelDao/Cadastro_Dao.php';
+require_once '../model/modelBean/Cadastro_Bean.php';
 
 $nome = filter_input(INPUT_POST,"nome");
 $cpf = filter_input(INPUT_POST,"cpf");
@@ -14,8 +12,9 @@ $email = filter_input(INPUT_POST,"email");
 $tel = filter_input(INPUT_POST,"tel");
 $comentario = filter_input(INPUT_POST,"comentario");
 
-$obj = new \Site\Model\ModelBean\Cadastro_Bean();
-$conexao = new \Site\Model\ModelDao\Conexao();
+$sql = new Cadastro_Dao();
+$obj = new Cadastro_Bean();
+$con = new Conexao();
 
 
 $obj->setNome($nome);
@@ -26,3 +25,4 @@ $obj->setEmail($email);
 $obj->setTel($tel);
 $obj->setComentario($comentario);
 
+$sql->create($con,$obj);

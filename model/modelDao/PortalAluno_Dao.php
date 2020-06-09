@@ -1,7 +1,7 @@
 <?php
-namespace Site\Model\ModelDao;
-
-use Site\Model\ModelBean\PortalAluno_Bean;
+     ( stream_resolve_include_path ( "PortalAluno_Bean.php" ));
+    ( stream_resolve_include_path ( "Conexao.php" ));
+ 
 
 class PortalAluno_Dao
 {
@@ -11,7 +11,7 @@ class PortalAluno_Dao
     function __construct()
     {
         $this->obj = new PortalAluno_Bean();
-        $this->con = new conexao();
+        $this->con = new Conexao();
     }
 
     public function create($con, $obj)

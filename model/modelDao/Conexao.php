@@ -1,8 +1,4 @@
 <?php
-namespace Site\Model\ModelDao;
-
-use PDO;
-use PDOException;
 
 
 class Conexao {
@@ -27,7 +23,7 @@ class Conexao {
                 self::$pdo = new PDO("mysql:host=".$this->servidor.";dbname=".$this->banco, $this->usuario, $this->senha);
             }
             return self::$pdo;
-        } catch (PDOException$ex) {
+        } catch (PDOException $ex) {
 			echo $ex->getMessage();
         }
     }

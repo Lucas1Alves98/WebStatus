@@ -1,6 +1,4 @@
 <?php
-namespace Site\Model\ModelBean;
-require_once 'vendor/autoload.php';   
 
 class Cadastro_Bean{
 
