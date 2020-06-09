@@ -26,3 +26,5 @@ $obj->setTel($tel);
 $obj->setComentario($comentario);
 
 $sql->create($con,$obj);
+
+print $nome;

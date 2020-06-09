@@ -1,5 +1,5 @@
 <?php
-(stream_resolve_include_path("CadastroController.php"));
+(stream_resolve_include_path("Cadastro_Bean.php"));
 (stream_resolve_include_path("Conexao.php"));
 
 class Cadastro_Dao
