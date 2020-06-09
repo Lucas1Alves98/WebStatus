@@ -86,7 +86,7 @@ require_once 'vendor/autoload.php';   php>
 							<form action="../Controller/PortalAlunoController.php" method="POST">
 								<div class="top-margin">
 									<label>CPF <span class="text-danger">*</span></label>
-									<input type="text" name="cpf" class="form-control">
+									<input type="number" name="cpf" class="form-control">
 								</div>
 								<div class="top-margin">
 									<label>Senha <span class="text-danger">*</span></label>

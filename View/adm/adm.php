@@ -1,5 +1,3 @@
-<php?
-require_once 'vendor/autoload.php';   php>
 
 
 <!DOCTYPE html>
@@ -66,11 +64,11 @@ require_once 'vendor/autoload.php';   php>
                     <input type="text" name="nome" class="campo" maxlenght="40" required autofocus><br>
 
                     CPF<br>
-                    <input type="text" name="cpf" class="campo" maxlenght="14" required onkeydown="javascript: fMasc( this, mCPF );">
+                <input type="text" name="cpf1" maxlenght="11"  required >
                     <br>
                     
                     Data de Nascimento<br>
-                    <input type="date" name="nascimento" class="campo" maxlenght="40" required><br>
+                    <input type="date" name="nascimento" class="campo" required><br>
                     <br>
                     Sexo:
                     <select name="sexo">
@@ -81,13 +79,13 @@ require_once 'vendor/autoload.php';   php>
                     <br><br>
 
                     Endereço<br>
-                    <input type="text" name="endereco" class="campo" maxlenght="40" required autofocus><br>
+                    <input type="text" name="endereco" class="campo" maxlenght="40" required ><br>
 
                     Email<br>
-                    <input type="email" name="email" class="campo" maxlenght="40" required autofocus><br>
+                    <input type="email" name="email" class="campo" maxlenght="40" required ><br>
 
                     Telefone<br>
-                    <input type="text" name="tel" class="campo" maxlenght="14"  required onkeydown="javascript: fMasc( this, mTel );"><br>
+                    <input type="number" name="tel" class="campo" maxlenght="9"  required ><br>
 
 
                     Ocorrência<br>

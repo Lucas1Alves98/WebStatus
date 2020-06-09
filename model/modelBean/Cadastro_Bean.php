@@ -3,7 +3,7 @@
 class Cadastro_Bean{
 
 private $nome;
-private $cpf;
+private $cpf1;
 private $nascimento;
 private $endereco;
 private $email;
@@ -14,8 +14,8 @@ function getNome() {
     return $this->nome;
 }
 
-function getCpf() {
-    return $this->cpf;
+function getCpf1() {
+    return $this->cpf1;
 }
 
 function getNascimento() {
@@ -42,8 +42,8 @@ function setNome($nome) {
     $this->nome = $nome;
 }
 
-function setCpf($cpf) {
-    $this->cpf = $cpf;
+function setCpf1($cpf1) {
+    $this->cpf1 = $cpf1;
 }
 
 function setNascimento($nascimento) {

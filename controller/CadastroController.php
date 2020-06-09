@@ -5,7 +5,7 @@ require_once '../model/modelDao/Cadastro_Dao.php';
 require_once '../model/modelBean/Cadastro_Bean.php';
 
 $nome = filter_input(INPUT_POST,"nome");
-$cpf = filter_input(INPUT_POST,"cpf");
+$cpf1 = filter_input(INPUT_POST,"cpf1");
 $nascimento = filter_input(INPUT_POST,"nascimento");
 $endereco = filter_input(INPUT_POST,"endereco");
 $email = filter_input(INPUT_POST,"email");
@@ -18,13 +18,12 @@ $con = new Conexao();
 
 
 $obj->setNome($nome);
-$obj->setCpf($cpf);
+$obj->setCpf1($cpf1);
 $obj->setNascimento($nascimento);
 $obj->setEndereco($endereco);
 $obj->setEmail($email);
 $obj->setTel($tel);
 $obj->setComentario($comentario);
 
-$sql->create($con,$obj);
+$sql->insert($con,$obj);
 
-print $nome;

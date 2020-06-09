@@ -16,24 +16,20 @@ class Cadastro_Dao
   }
 
   
-  public function create($con, $obj)
-  
-  {
-   
-    $query = $con->conectar()->prepare("insert into admtable(nome,cpf,nascimento,endereco,email,tel,comentario) values (:nome,:cpf,:nascimento,:endereco,:email,:tel,:comentario)");
+  public function insert ($con, $obj){
+
+$query = $con->conectar()->prepare("insert into admtable (nome,cpf1,nascimento,endereco,email,tel,comentario) values (:nome,:cpf1,:nascimento,:endereco,:email,:tel,:comentario)");
+
+ $query->bindValue (":nome", $obj->getNome());
+ $query->bindValue (":cpf1", $obj->getCpf1());
+ $query->bindValue (":nascimento", $obj->getNascimento());
+ $query->bindValue (":endereco", $obj->getEndereco());
+ $query->bindValue (":email", $obj->getEmail());
+ $query->bindValue (":tel", $obj->getTel());
+ $query->bindValue (":comentario", $obj->getComentario());
 
 
-    $query->bindValue(":nome", $obj->getNome());
-    $query->bindValue(":cpf", $obj->getCpf());
-    $query->bindValue(":nascimento", $obj->getNascimento());
-    $query->bindValue(":endereco", $obj->getEndereco());
-    $query->bindValue(":email", $obj->getEmail());
-    $query->bindValue(":tel", $obj->getTel());
-    $query->bindValue(":comentario", $obj->getComentario());
-
-
-
-
-    $query->execute();
+ $query->execute();
   }
+  
 }
