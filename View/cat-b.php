@@ -1,6 +1,3 @@
-<php?
-require_once 'vendor/autoload.php';   php>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,7 +14,7 @@ require_once 'vendor/autoload.php';   php>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-	<!-- Custom styles for our template -->
+		<!-- Edição bootstrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
 
@@ -114,7 +111,7 @@ require_once 'vendor/autoload.php';   php>
 				</div>
 				<div class="row widget">
 					<div class="col-xs-12">
-						<h4>Lorem ipsum dolor sit</h4>
+						<h4></h4>
 						<p><img src="assets/images/bomfim.jpg" alt=""></p>
 						<p>Nossa área para os alunos aprenderem a conduzir o veiculo da autoescola status é na cidade baixa</p>
 					</div>

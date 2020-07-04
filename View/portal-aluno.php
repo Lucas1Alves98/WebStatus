@@ -1,6 +1,3 @@
-<php?
-require_once 'vendor/autoload.php';   php>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,7 +14,7 @@ require_once 'vendor/autoload.php';   php>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-	<!-- Custom styles for our template -->
+		<!-- Edição bootstrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
 
@@ -83,14 +80,14 @@ require_once 'vendor/autoload.php';   php>
 							<p class="text-center text-muted"> </p>
 							<hr>
 							
-							<form action="../Controller/PortalAlunoController.php" method="POST">
+							<form>
 								<div class="top-margin">
 									<label>CPF <span class="text-danger">*</span></label>
-									<input type="number" name="cpf" class="form-control">
+									<input type="text" class="form-control">
 								</div>
 								<div class="top-margin">
 									<label>Senha <span class="text-danger">*</span></label>
-									<input type="password" name="senha" class="form-control">
+									<input type="password" class="form-control">
 								</div>
 
 								<hr>
@@ -166,7 +163,8 @@ require_once 'vendor/autoload.php';   php>
 								<a href="empresa.php">Empresa</a> |
 								<a href="cat-b.php">Categorias</a> |
 								<a href="contato.php">Contato</a> |
-								<b><a href="portal-aluno.php">Portal do Aluno</a></b>
+								<b><a href="portal-aluno.php">Portal do Aluno</a> |</b>
+								<b><a href="admin.php">Admin</a></b>
 							</p>
 						</div>
 					</div>

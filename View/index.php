@@ -1,8 +1,4 @@
-<php?
-require_once 'vendor/autoload.php';   
-require_once ('../config/config.php');  php>
-
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
@@ -24,7 +20,7 @@ require_once ('../config/config.php');  php>
 	<!-- Font Awesome-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- HTML5  -->
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
@@ -38,7 +34,7 @@ require_once ('../config/config.php');  php>
 			<div class="navbar-header">
 				<!-- botão dos menu começo -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                                <a class="navbar-brand" href="index.php"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+				<a class="navbar-brand" href="index.php"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
@@ -47,14 +43,14 @@ require_once ('../config/config.php');  php>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Categorias <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-                                                    <li><a href="cat-a.php">Cat A</a></li>
+							<li><a href="cat-a.php">Cat A</a></li>
 							<li class="active"><a href="cat-b.php">Cat B</a></li>
 							<li class="active"><a href="cat-ab.php">Cat A/B</a></li>
 							<li class="active"><a href="adicao.php">Adição</a></li>
 						</ul>
 					</li>
 					<li><a href="contato.php">Contato</a></li>
-                                        <li><a class="btn" href="portal-aluno.php">Portal do Aluno</a></li>
+					<li><a class="btn" href="portal-aluno.php">Portal do Aluno</a></li>
 				</ul>
 			</div><!--botão do menu final-->
 		</div>
@@ -67,7 +63,7 @@ require_once ('../config/config.php');  php>
 			<div class="row">
 				<h1 class="lead">CARTEIRA DE HABILITAÇÃO NA MÃO!</h1>
 				<p class="tagline">Venha confire nossos descontos</p>
-                                <p><a class="btn btn-default btn-lg" role="button"href="contato.php">CONTATO</a> <a class="btn btn-action btn-lg" role="button" href="cat-b.html">SAIBA MAIS</a></p>
+				<p><a class="btn btn-default btn-lg" role="button"href="contato.php">CONTATO</a> <a class="btn btn-action btn-lg" role="button" href="cat-b.php">SAIBA MAIS</a></p>
 			</div>
 		</div>
 	</header>
@@ -91,25 +87,29 @@ require_once ('../config/config.php');  php>
 			
 			<div class="row">
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><i class="fa fa-car" ></i><h4>1ª Habilitação de Carro</h4></div>
+					<a href="cat-b.php">
+					<div class="h-caption"><i class="fa fa-car" ></i> <h4>1ª Habilitação de Carro</h4></a></div>
 					<div class="h-body text-center">
 						<p>Habilita a conduzir veículos automotores com ou sem reboque, com peso bruto total (PBT) de até 3.500 kg e lotação máxima de 8 lugares, não contando o do condutor. NÃO PERMITE dirigir veículos automotores de 02 ou 03 rodas.</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-motorcycle"></i>1ª Habilitação de Moto</h4></div>
+					<a href="cat-a.php">
+					<div class="h-caption"><h4><i class="fa fa-motorcycle"></i>1ª Habilitação de Moto</h4></a></div>
 					<div class="h-body text-center">
 						<p>Habilita a conduzir veículos automotores de 2 ou 3 rodas – com ou sem carro lateral – como motocicletas, ciclomotores, motonetas e triciclos. NÃO PERMITE dirigir nenhum outro tipo de veículo automotor.</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-address-card"></i>Categoria A/B</h4></div>
+					<a href="cat-ab.php">
+					<div class="h-caption"><h4><i class="fa fa-address-card"></i>Categoria A/B</h4></a></div>
 					<div class="h-body text-center">
 						<p>Além de poder tirar a primeira habilitação nas categorias “A” e “B” de forma separada, na Autoescola Reis você pode fazer os dois cursos simultaneamente, o que habilita o condutor a dirigir carros e pilotar motos.</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-plus-square"></i>Adição de Categoria</h4></div>
+					<a href="adicao.php">
+					<div class="h-caption"><h4><i class="fa fa-plus-square"></i>Adição de Categoria</h4></a></div>
 					<div class="h-body text-center">
 						<p>Este curso foi desenvolvido para as pessoas que já possuem habilitação na categoria “A” ou “B” e deseja adicionar a outra categoria. Ideal para pessoas que desejam a praticidade da motocicleta em certas situações e o conforto e segurança do carro em outras. </p>
 					</div>
@@ -154,13 +154,21 @@ require_once ('../config/config.php');  php>
 		
 
 		<div class="jumbotron top-space">
-			<h4>Dicta, nostrum nemo soluta sapiente sit dolor quae voluptas quidem doloribus recusandae facere magni ullam suscipit sunt atque rerum eaque iusto facilis esse nam veniam incidunt officia perspiciatis at voluptatibus. Libero, aliquid illum possimus numquam fuga.</h4>
-     		<p class="text-right"><a class="btn btn-primary btn-large">ORÇAMENTO»</a></p>
+			
+			<h4>Entre em contato para mais informações.</h4>
+			
+		
+			 <p class="text-right">
+				 
+				 <a class="btn btn-primary btn-large">ORÇAMENTO»</a></p>
+				 
+			 <p><img src="assets/images/sinalito-m.png" alt=""></p>
+			 
   		</div>
 
 </div>	<!-- /container -->
 	
-	<!-- Social links. @TODO: replace by link/instructions in template -->
+	<!-- Social links -->
 	<section id="social">
 		<div class="container">
 			<div class="wrapper clearfix">
@@ -224,10 +232,10 @@ require_once ('../config/config.php');  php>
 						<div class="widget-body">
 							<p class="simplenav">
 								<a href="#">Início</a> | 
-                                                                <a href="empresa.php">Empresa</a> |
+								<a href="empresa.php">Empresa</a> |
 								<a href="cat-b.php">Categorias</a> |
 								<a href="contato.php">Contatos</a> |
-                                                                <b><a href="portal-aluno.php">Portal do Aluno</a></b>
+								<b><a href="portal-aluno.php">Portal do Aluno</a></b>
 							</p>
 						</div>
 					</div>

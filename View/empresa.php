@@ -1,7 +1,3 @@
-<php?
-require_once 'vendor/autoload.php';   php>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +14,7 @@ require_once 'vendor/autoload.php';   php>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-	<!-- Custom styles for our template -->
+		<!-- Edição bootstrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
 
@@ -76,16 +72,16 @@ require_once 'vendor/autoload.php';   php>
 				<header class="page-header">
 					<h1 class="page-title">Sobre a Status</h1>
 				</header>
-				<h3>Lorem ipsum</h3>
-				<p><img src="assets/images/mac.jpg" alt="" class="img-rounded pull-right" width="300" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.</p>
-				<p>Quos, aliquam nam velit impedit minus tenetur beatae voluptas facere sint pariatur! Voluptatibus, quisquam, error, est assumenda corporis inventore illo nesciunt iure aut dolor possimus repellat minima veniam alias eius!</p>
-				<h3>Necessitatibus</h3>
-				<p>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam!</p>
-				<h3>Fugit, laboriosam</h3>
-				<p>Eum, quasi, est, vitae, ipsam nobis consectetur ea aspernatur ad eos voluptatibus fugiat nisi perferendis impedit. Quam, nulla, excepturi, voluptate minus illo tenetur sint ab in culpa cumque impedit quibusdam. Saepe, molestias quia voluptatem natus velit fugiat omnis rem eos sapiente quasi quaerat aspernatur quisquam deleniti accusantium laboriosam odio id?</p>
-				<h3>Doloribus, illo ipsum</h3>
-				<p>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam!</p>
-				<p>Eum, quasi, est, vitae, ipsam nobis consectetur ea aspernatur ad eos voluptatibus fugiat nisi perferendis impedit. Quam, nulla, excepturi, voluptate minus illo tenetur sint ab in culpa cumque impedit quibusdam. Saepe, molestias quia voluptatem natus velit fugiat omnis rem eos sapiente quasi quaerat aspernatur quisquam deleniti accusantium laboriosam odio id?</p>
+				<h3></h3>
+				<p><img src="assets/images/mac.jpg" alt="" class="img-rounded pull-right" width="300" > O Centro de Formação de Condutores status foi fundado em outubro de 2005 com a finalidade de formar Condutores responsáveis por vida e assim trazer mais Paz ao trânsito. Tendo uma equipe de instrutores formados e capacitados para contribuir com a baixa estatística de acidentes de trânsito. A Status está localizada na Baixa do Bonfim em um dos pontos turísticos de Salvador, possui uma excelente estrutura com salas de aula climatizadas e com exclusiva área coberta e fechada para treinamento
+					 prático de motos, o ambiente é agradável e harmonioso favorecendo assim o aprendizado de seus clientes.
+					</p>
+				<h3>Misão</h3>
+				<p>Uma Declaração de missão é uma declaração do propósito de uma empresa ou organização. Esta declaração deve orientar as ações da organização, explicitar seu objetivo geral, proporcionar um senso de direção, e orientar a tomada de decisões.</p>
+				<h3>Valores</h3>
+				<p>Em ética, valor denota o grau de importância de alguma coisa ou ação, com o objetivo de determinar quais são as melhores ações a serem tomadas ou qual a melhor maneira de viver, ou para determinar a importância de diferentes ações.</p>
+				<h3>Visão</h3>
+				<p> é a razão de existir de uma organização, ou seja, o porquê de ela ter sido criada. Na prática, seu propósito de existir é o que, no dia a dia, dá verdadeiro sentido ao trabalho da equipe e guia suas ações nesta direção. Visão – mostra aonde a empresa quer chegar e traz seus objetivos de longo prazo.</p>
 				
 			</article>
 			<!-- /Article -->
@@ -93,16 +89,7 @@ require_once 'vendor/autoload.php';   php>
 			<!-- Sidebar -->
 			<aside class="col-sm-4 sidebar sidebar-right">
 
-				<div class="widget">
-					<h4>Vacancies</h4>
-					<ul class="list-unstyled list-spaces">
-						<li><a href="">Lorem ipsum dolor</a><br><span class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, laborum.</span></li>
-						<li><a href="">Totam, libero, quis</a><br><span class="small text-muted">Suscipit veniam debitis sed ipsam quia magnam eveniet perferendis nisi.</span></li>
-						<li><a href="">Enim, sequi dignissimos</a><br><span class="small text-muted">Reprehenderit illum quod unde quo vero ab inventore alias veritatis.</span></li>
-						<li><a href="">Suscipit, consequatur, aut</a><br><span class="small text-muted">Sed, mollitia earum debitis est itaque esse reiciendis amet cupiditate.</span></li>
-						<li><a href="">Nam, illo, veritatis</a><br><span class="small text-muted">Delectus, sapiente illo provident quo aliquam nihil beatae dignissimos itaque.</span></li>
-					</ul>
-				</div>
+				
 
 			</aside>
 			<!-- /Sidebar -->

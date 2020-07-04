@@ -78,7 +78,7 @@ function init() {
 			stylers: [
 				{ visibility: "on" }
 			]
-			/*
+			/**/
 		/*},{
 			featureType: "water",
 			elementType: "labels",
@@ -114,4 +114,3 @@ function init() {
 		});
 	}
 }
-*/

@@ -1,18 +1,32 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head> 
 <meta charset="UTF-8">
-    
+
+    <link rel="shortcut icon" href="./images/gt_favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/Padm.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.mask.min.js"></script>
+   <!--- Identificar os digitos -->
+   <script type="text/javascript">
+        $(document).ready(function(){
+            $("#cpf").mask("000.000.000-00")
+            $("#dataNascimento").mask("00/00/0000")
+            $("#cep").mask("00.000-000")
+            $("#telefone").mask("(00) 0000-0000")
+            $("#celular").mask ("(00)9 0000-0000")
+
+        })
+    </script>
+
+
     <title>Area do administrador</title>
 </head>
 <header>
-  
     <div class="header-area">
         <div class="logo">
             <a href="#">
@@ -21,31 +35,26 @@
         </div>
 </header>
 <body>
-    <input  type="checkbox" id="bt_menu"><!---->
-    <label for= "bt_menu"> &#9776; </label><!---->
+    
     <!--começo do  Menu -->
     <div class="container">
         <nav>
             <ul class="menu">
-                <a href="#">
+                <a href="adm.php">
                     <li><i class="fa fa-user"></i> Novo Cadastro</li>
                 </a>
-                <a href="">
+                <a href="buscar.php">
                     <li><i class="fa fa-search"></i> Buscar</li>
                 </a>
-                <a href="">
-                    <li><i class="fa fa-trash"></i> Deletar</li>
-                </a>
-                <a href="">
+            
+                <a href="solicitacoes.php">
                     <li><i class="fa fa-bell"></i> Solicitações</li>
                 </a>
-                <a href="">
+                <a href="inseriraulas.php">
                     <li><i class="fa fa-folder"></i> Inserir Aulas</li>
                 </a>
-                <a href="">
-                    <li><i class="fa fa-history"></i> Histórico de Aluno</li>
-                </a>
-                <a href="AdmLogin.php">
+
+                <a href="/View/admin.php">
                     <li><i class="fa fa-sign-out"></i> Encerrar</li>
                 </a>
             </ul>
@@ -56,19 +65,20 @@
                 <h1>Cadastro de Alunos</h1>
             </div>
             <br>
+           
             <!-- formulário de Cadastro de Aluno -->
             <div class="text-f">
-                <form method="post" action="../../Controller/CadastroController.php">     
-                    
+                <form method="post" action="../Controller/cadastro.php">
 
+                    <label> Nome Completo</label><br>
                     <input type="text" name="nome" class="campo" maxlenght="40" required autofocus><br>
 
-                    CPF<br>
-                <input type="text" name="cpf1" maxlenght="11"  required >
+                    <label>CPF</label> <br>
+                    <input type="text" name="cpf" class="campo" id="cpf" maxlenght="14">
                     <br>
                     
-                    Data de Nascimento<br>
-                    <input type="date" name="nascimento" class="campo" required><br>
+                    <label>Data de Nascimento</label><br>
+                    <input type="text" name="dataNascimento" id="dataNascimento"class="campo" maxlenght="40" required><br>
                     <br>
                     Sexo:
                     <select name="sexo">
@@ -78,25 +88,38 @@
                     </select>
                     <br><br>
 
-                    Endereço<br>
-                    <input type="text" name="endereco" class="campo" maxlenght="40" required ><br>
+                    <label>Endereço</label><br>
+                    <input type="text" name="endereco" class="campo" maxlenght="40" required autofocus><br>
 
-                    Email<br>
-                    <input type="email" name="email" class="campo" maxlenght="40" required ><br>
+                    <label>CEP</label><br>
+			        <input type="text" name="cep" id="cep" class="campo" /><br>
 
-                    Telefone<br>
-                    <input type="number" name="tel" class="campo" maxlenght="9"  required ><br>
-
-
+                    <label>Telefone</label><br>
+                    <input type="text" name="telefone" class="campo" id="telefone" />
+                    <br>
+                    
+                    <label>Celular</label><br>
+                    <input type="text" name="celular" class="campo" id="celular" />
+                    <br>
+                   
+                    <label>E-mail</label><br>
+                    <input type="email" name="email" class="campo" id="email"/>
+                    <br>
+                    <label>Senha</label><br>
+                    <input type="text" name="celular" class="campo" id="senha" />
+                    <br>
+                    <label>Confirmar Senha</label><br>
+                    <input type="text" name="celular" class="campo" id="confirmsenha" />
+                    <br>
                     Ocorrência<br>
-                    <textarea name="comentario" id="comentarios" style="resize: none">
-                Comente aqui...
+                    <textarea rows="10" cols="55" maxlength="500" name="comentarios" id="comentarios" style="resize: none">
+                     Comente aqui...
                 
-            </textarea><br /><br>
+                  </textarea><br /><br>
 
-
-                    <input type="submit" value="Salvar" class="btn">
-                    <input type="reset" value="Limpar" class="btn">
+                   
+                    <input type="submit" class="btn btn-primary" value="Salvar" class="btn">
+                    <input type="reset" class="btn btn-outline-success" value="Limpar" class="btn">
                     <br>
                     <br>
                 </form>
