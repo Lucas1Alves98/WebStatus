@@ -3,19 +3,43 @@
 class Cadastro_Bean{
 
 private $nome;
-private $cpf1;
+private $cpf;
+private $sexo;
 private $nascimento;
 private $endereco;
+private $cep;
 private $email;
-private $tel;
-private $comentario;
+private $telefone;
+private $comentarios;
+private $senha;
+private $celular;
+
+
 
 function getNome() {
     return $this->nome;
 }
 
-function getCpf1() {
-    return $this->cpf1;
+
+function getSenha() {
+    return $this->senha;
+}
+
+
+function getCelular() {
+    return $this->celular;
+}
+
+function getCep(){
+    return $this->cep;
+}
+
+function getCpf() {
+    return $this->cpf;
+}
+
+function getSexo() {
+    return $this->sexo;
 }
 
 function getNascimento() {
@@ -30,20 +54,35 @@ function getEmail() {
     return $this->email;
 }
 
-function getTel() {
-    return $this->tel;
+function getTelefone() {
+    return $this->telefone;
 }
 
-function getComentario() {
-    return $this->comentario;
+function getComentarios() {
+    return $this->comentarios;
 }
 
 function setNome($nome) {
     $this->nome = $nome;
 }
 
-function setCpf1($cpf1) {
-    $this->cpf1 = $cpf1;
+function setSenha($senha) {
+    $this->senha = $senha;
+}
+
+function setCelular($celular) {
+    $this->celular = $celular;
+}
+
+function setCep ($cep) {
+    $this->cep = $cep;
+}   
+function setCpf($cpf) {
+    $this->cpf = $cpf;
+}
+
+function setSexo($sexo) {
+    $this->sexo = $sexo;
 }
 
 function setNascimento($nascimento) {
@@ -58,12 +97,12 @@ function setEmail($email) {
     $this->email = $email;
 }
 
-function setTel($tel) {
-    $this->tel = $tel;
+function setTelefone($telefone) {
+    $this->telefone = $telefone;
 }
 
-function setComentario($comentario) {
-    $this->comentario = $comentario;
+function setComentarios($comentarios) {
+    $this->comentarios = $comentarios;
 }
 
 
