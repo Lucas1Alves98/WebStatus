@@ -62,7 +62,7 @@
 
 		<ol class="breadcrumb">
 			<li><a href="index.php">Início</a></li>
-			<li class="active">Área do Aluno</li>
+			<li class="active">�?rea do Aluno</li>
 		</ol>
 
 		<div class="row">
@@ -80,14 +80,14 @@
 							<p class="text-center text-muted"> </p>
 							<hr>
 							
-							<form>
+                                                        <form method="post" action="../controller/ControllerAcesso.php">
 								<div class="top-margin">
 									<label>CPF <span class="text-danger">*</span></label>
-									<input type="text" class="form-control">
+                                                                        <input type="text" name="cpf" class="form-control">
 								</div>
 								<div class="top-margin">
 									<label>Senha <span class="text-danger">*</span></label>
-									<input type="password" class="form-control">
+                                                                        <input type="password" name="senha" class="form-control">
 								</div>
 
 								<hr>
@@ -144,7 +144,7 @@
 					<div class="col-md-6 widget">
 						<h3 class="widget-title">Confira nossos serviços</h3>
 						<div class="widget-body">
-							<p>Oferecemos serviços de formação de condutores e treinamentos para aquisição da primeira CNH nas categorias “A” e “B”, para renovação de CNH, para adição ou mudança de categorias.</p>
+							<p>Oferecemos serviços de formação de condutores e treinamentos para aquisição da primeira CNH nas categorias “A�? e “B�?, para renovação de CNH, para adição ou mudança de categorias.</p>
 						</div>
 					</div>
 
