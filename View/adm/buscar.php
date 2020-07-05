@@ -9,13 +9,13 @@
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/jquery.mask.min.js"></script>
    <!--- Identificar os digitos -->
-   <script type="text/javascript">
+    <!--- <script type="text/javascript">
         $(document).ready(function(){
             $("#cpf").mask("000.000.000-00")
            
 
         })
-    </script>
+    </script>-->
     
     <title>Area do administrador</title>
 </head>
@@ -59,11 +59,11 @@
             <br>
             <!-- formulário de Cadastro de Aluno -->
             <div class="text-f">
-                <form method="post" action="../Controller/cadastro.php">
+                <form method="post" action="../../controller/ControllerConsulta.php">
 
                    
                     <label>CPF do Aluno</label> <br>
-                    <input type="text" name="cpf" class="campo" id="cpf" maxlenght="14">
+                    <input type="text" name="Pesquisa" class="campo"  maxlenght="14">
                     <br>
     
 
