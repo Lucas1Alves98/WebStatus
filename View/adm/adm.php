@@ -15,10 +15,9 @@
    <script type="text/javascript">
         $(document).ready(function(){
             $("#cpf").mask("000.000.000-00")
-            $("#dataNascimento").mask("00/00/0000")
+           
             $("#cep").mask("00.000-000")
-            $("#telefone").mask("(00) 0000-0000")
-            $("#celular").mask ("(00)9 0000-0000")
+           
 
         })
     </script>
@@ -70,15 +69,16 @@
             <div class="text-f">
                 <form method="post" action="../../controller/CadastroController.php">
 
-                    <label> Nome Completo</label><br>
+                <label> Nome Completo</label><br>
                     <input type="text" name="nome" class="campo" maxlenght="40" required autofocus><br>
 
                     <label>CPF</label> <br>
                     <input type="text" name="cpf" class="campo" id="cpf" maxlenght="14">
                     <br>
-                    
+                   
+                      
                     <label>Data de Nascimento</label><br>
-                    <input type="text" name="dataNascimento" id="dataNascimento"class="campo" maxlenght="40" required><br>
+                    <input type="text" name="nascimento" class="campo" maxlenght="40" required><br>
                     <br>
                     Sexo:
                     <select name="sexo">
@@ -95,31 +95,32 @@
 			        <input type="text" name="cep" id="cep" class="campo" /><br>
 
                     <label>Telefone</label><br>
-                    <input type="text" name="telefone" class="campo" id="telefone" />
+                    <input type="text" name="telefone" class="campo" />
                     <br>
                     
                     <label>Celular</label><br>
-                    <input type="text" name="celular" class="campo" id="celular" />
+                    <input type="text" name="celular" class="campo"  />
                     <br>
                    
                     <label>E-mail</label><br>
-                    <input type="email" name="email" class="campo" id="email"/>
-                    <br>
+                    <input type="email" name="email" class="campo" maxlenght="40" required autofocus><br>
+                   
                     <label>Senha</label><br>
-                    <input type="text" name="celular" class="campo" id="senha" />
+                    <input type="text" name="senha" class="campo" id="celular" />
                     <br>
+                    
                     <label>Confirmar Senha</label><br>
-                    <input type="text" name="celular" class="campo" id="confirmsenha" />
+                    <input type="text" name="senhaComfirme" class="campo" id="celular" />
                     <br>
                     Ocorrência<br>
                     <textarea rows="10" cols="55" maxlength="500" name="comentarios" id="comentarios" style="resize: none">
                      Comente aqui...
                 
                   </textarea><br /><br>
-
+                    
                    
                     <input type="submit" class="btn btn-primary" value="Salvar" class="btn">
-                    <input type="reset" class="btn btn-outline-success" value="Limpar" class="btn">
+                    <input type="reset" class="btn btn-outline-success" value="Limpar" class="btn"> 
                     <br>
                     <br>
                 </form>

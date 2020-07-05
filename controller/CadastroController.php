@@ -1,8 +1,8 @@
 <?php
 
-require_once '../model/modelDao/Conexao.php';
-require_once '../model/modelDao/Cadastro_Dao.php';
-require_once '../model/modelBean/Cadastro_Bean.php';
+include_once '../model/modelDao/Conexao.php';
+ include_once '../model/modelDao/Cadastro_Dao.php';
+ include_once '../model/modelBean/Cadastro_Bean.php';
 
 $nome = filter_input(INPUT_POST,"nome");
 $cpf = filter_input(INPUT_POST,"cpf");
