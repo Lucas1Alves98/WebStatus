@@ -61,7 +61,12 @@
                         $query->execute();
                         $resultado=$query->fetchAll();
                         foreach($resultado as $value){
-                            echo
+                            
+                        echo "Nome: ".$value['nome']."<br>";
+                        echo "Cpf: ".$value['cpf']."<br>";
+                        echo "Renach: ".$value['renach']."<br>";
+                        echo "Renach: ".$value['comentarios']."<br>";
+                        
                         
                         }
                 
