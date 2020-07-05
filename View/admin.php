@@ -80,14 +80,14 @@
 							<p class="text-center text-muted"> </p>
 							<hr>
 							
-							<form>
+							<form method="POST" action="../controller/AdminController.php">
 								<div class="top-margin">
 									<label>E-mail<span class="text-danger">*</span></label>
-									<input type="text" class="form-control">
+									<input type="text" name="email" class="form-control">
 								</div>
 								<div class="top-margin">
 									<label>Senha <span class="text-danger">*</span></label>
-									<input type="password" class="form-control">
+									<input type="password" name="senha" class="form-control">
 								</div>
 
 								<hr>

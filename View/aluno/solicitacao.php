@@ -48,7 +48,7 @@
            
             <!-- formulário de Cadastro de Aluno -->
             <div class="text-f">
-                <form method="post" action="../Controller/cadastro.php">
+                <form method="post" action="../../controller/SolicitacoesController.php">
 
                     <label> Nome Completo</label><br>
                     <input type="text" name="nome" class="campo" maxlenght="40" required autofocus><br>

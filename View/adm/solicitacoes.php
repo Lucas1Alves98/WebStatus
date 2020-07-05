@@ -51,7 +51,23 @@
             <div class="text-f">
                 <form method="post" action="../Controller/cadastro.php">
 
-                   
+                   <?php
+                        require_once '../../model/modelDao/Conexao.php';
+                        
+
+                        $con = new Conexao();
+
+                        $query= $con->conectar()->prepare("select* from solicitacao ");
+                        $query->execute();
+                        $resultado=$query->fetchAll();
+                        foreach($resultado as $value){
+                            echo
+                        
+                        }
+                
+                    
+                    
+                    ?>
                  
                     <br>
                     <br>
