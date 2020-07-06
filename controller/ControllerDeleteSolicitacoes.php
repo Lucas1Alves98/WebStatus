@@ -16,7 +16,6 @@ $id = ($_GET['id']);
 $s->deletar($con ,$id);
 
 
+header("location: ../View/adm/solicitacoes.php");
 
-
-?>
 
