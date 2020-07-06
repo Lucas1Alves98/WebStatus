@@ -35,7 +35,10 @@
                 <a href="inseriraulas.php">
                     <li><i class="fa fa-folder"></i> Inserir Aulas</li>
                 </a>
-                <a href="AdmLogin.php">
+                <a href="avisos.php">
+                    <li><i class="fa fa-folder"></i> Avisos</li>
+                </a>
+                <a href="../admin.php">
                     <li><i class="fa fa-sign-out"></i> Encerrar</li>
                 </a>
             </ul>
@@ -66,10 +69,11 @@
                         echo "Cpf: ".$value['cpf']."<br>";
                         echo "Renach: ".$value['renach']."<br>";
                         echo "Renach: ".$value['comentarios']."<br>";
+                        echo "<br><br>" ;
                         
                         
                         }
-                
+                    
                     
                     
                     ?>

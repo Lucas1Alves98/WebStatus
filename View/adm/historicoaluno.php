@@ -38,7 +38,10 @@
                 <a href="historicoaluno.php">
                     <li><i class="fa fa-history"></i> Histórico de Aluno</li>
                 </a>
-                <a href="AdmLogin.php">
+                <a href="avisos.php">
+                    <li><i class="fa fa-folder"></i> Avisos</li>
+                </a>
+                <a href="../admin.php">
                     <li><i class="fa fa-sign-out"></i> Encerrar</li>
                 </a>
             </ul>

@@ -34,7 +34,7 @@
                 <a href="avisos.php">
                     <li><i class="fa fa-envelope"></i> Avisos</li>
                 </a>
-                <a href="/View/admin.php">
+                <a href="../portal-aluno.php">
                     <li><i class="fa fa-sign-out"></i> Encerrar Sessão</li>
                 </a>
             </ul>
@@ -64,7 +64,7 @@
                     
                     Ocorrência<br>
                     <textarea rows="10" cols="55" maxlength="500" name="comentarios" id="comentarios" style="resize: none">
-                     Comente aqui...
+                     
                 
                   </textarea><br /><br>
 

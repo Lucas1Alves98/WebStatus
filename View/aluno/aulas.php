@@ -31,7 +31,7 @@
                 <a href="avisos.php">
                     <li><i class="fa fa-envelope"></i> Avisos</li>
                 </a>
-                <a href="/View/admin.php">
+                <a href="../portal-aluno.php">
                     <li><i class="fa fa-sign-out"></i> Encerrar Sessão</li>
                 </a>
             </ul>

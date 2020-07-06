@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<body>
+
     <link rel="shortcut icon" href="./images/gt_favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,13 +9,14 @@
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/jquery.mask.min.js"></script>
    <!--- Identificar os digitos -->
-   <script type="text/javascript">
+    <!--- <script type="text/javascript">
         $(document).ready(function(){
             $("#cpf").mask("000.000.000-00")
            
 
         })
-    </script>
+    </script>-->
+    
     <title>Area do administrador</title>
 </head>
 <header>
@@ -38,14 +39,13 @@
                 <a href="buscar.php">
                     <li><i class="fa fa-search"></i> Buscar</li>
                 </a>
-                <a href="deletar.php">
-                    <li><i class="fa fa-trash"></i> Deletar</li>
-                </a>
+                
                 <a href="solicitacoes.php">
                     <li><i class="fa fa-bell"></i> Solicitações</li>
                 </a>
                 <a href="inseriraulas.php">
                     <li><i class="fa fa-folder"></i> Inserir Aulas</li>
+                </a>
                 </a>
                 <a href="avisos.php">
                     <li><i class="fa fa-folder"></i> Avisos</li>
@@ -56,28 +56,31 @@
             </ul>
         </nav>
         <section>
+            
             <!-- final do menu -->
             <div class="mininav">
-                <h1>Deletar Alunos</h1>
+                <h1>Avisos</h1>
             </div>
             <br>
             <!-- formulário de Cadastro de Aluno -->
             <div class="text-f">
-                <form method="post" action="../Controller/cadastro.php">
+            <form method="post" action="../../controller/AvisosController.php">
+         
+              Ocorrência<br>
+                    <textarea rows="10" cols="55" maxlength="500" name="comentarios" id="comentarios" style="resize: none">
+                     
+                
+                  </textarea><br /><br>
 
                    
-                    <label>CPF do Aluno</label> <br>
-                    <input type="text" name="cpf" class="campo" id="cpf" maxlenght="14">
-                    <br>
-    
-
-
-                    <input type="submit" value="Deletar" class="btn">
-                    <input type="reset" value="Limpar" class="btn">
+                    <input type="submit" class="btn btn-primary" value="Enviar" class="btn">
+                    <input type="reset" class="btn btn-outline-success" value="Limpar" class="btn">
                     <br>
                     <br>
                 </form>
             </div>
+            <!-- final do castrado do aluno -->
+        
             <!-- final do castrado do aluno -->
         </section>
         <br>

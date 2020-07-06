@@ -52,8 +52,11 @@
                 <a href="inseriraulas.php">
                     <li><i class="fa fa-folder"></i> Inserir Aulas</li>
                 </a>
+                <a href="avisos.php">
+                    <li><i class="fa fa-folder"></i> Avisos</li>
+                </a>
 
-                <a href="/View/admin.php">
+                <a href="../admin.php">
                     <li><i class="fa fa-sign-out"></i> Encerrar</li>
                 </a>
             </ul>
@@ -114,7 +117,7 @@
                     <br>
                     Ocorrência<br>
                     <textarea rows="10" cols="55" maxlength="500" name="comentarios" id="comentarios" style="resize: none">
-                     Comente aqui...
+                
                 
                   </textarea><br /><br>
                     

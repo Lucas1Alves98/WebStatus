@@ -29,6 +29,7 @@ GitHub: UbiraD;
         filipesenai123;
         warlicnix;
         Lucas1Alves98;
+        rebeca293;
         
 E-mail: ubiradesigner@gmail.com;
         albertinhoor@gmail.com;
@@ -36,6 +37,7 @@ E-mail: ubiradesigner@gmail.com;
         filipe10lm57@gmail.com;
         gabrielfst30@gmail.com;
         lucas1alves98@gmail.com;
+        rebecalimacomjesus@gmail.com;
 | 
 
 
