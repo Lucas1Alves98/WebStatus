@@ -66,7 +66,7 @@
             <div class="text-f">
             <form method="post" action="../../controller/AvisosController.php">
          
-              Ocorrência<br>
+              Enviar mensagens para os alunos<br>
                     <textarea rows="10" cols="55" maxlength="500" name="comentarios" id="comentarios" style="resize: none">
                      
                 
