@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="shortcut icon" href="./images/gt_favicon.png">
     <meta charset="UTF-8">

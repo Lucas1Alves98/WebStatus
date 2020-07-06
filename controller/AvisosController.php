@@ -17,3 +17,7 @@ $obj -> setComentarios($comentarios);
 
 
 $sql->insert($con,$obj);
+
+header("location: ../View/adm/avisos.php");
+  
+
