@@ -62,7 +62,7 @@
             <br>
             <!-- formulário de Cadastro de Aluno -->
             <div class="text-f">
-                <form method="post" action="../../controller/ControllerConsulta.php">
+                <form method="post" action="buscar.php">
 
                    
                     <label>CPF do Aluno</label> <br>
@@ -76,8 +76,43 @@
                     <br>
                     <br>
                 </form>
+              
+                <?php
+                require_once '../../model/modelDao/Conexao.php';
+                  
+                $con = new Conexao();
+                
+                $Pesquisa = filter_input(INPUT_POST,'Pesquisa');
+                
+                $query = $con->conectar()->prepare("select * from adm where cpf = :cpf");
+                
+                $query->bindValue(":cpf" , $Pesquisa);
+                
+                 $query->execute();  
+
+$result = $query->fetchAll();//convertendo querry em strinfg
+
+foreach ($result as $value ){
+    echo "Nome: ".$value['nome']."<br><br>";
+    echo "Cpf: ".$value['cpf']."<br><br>";
+    echo "Nascimento: ".$value['nascimento']."<br><br>";
+    echo "Sexo: ".$value['sexo']."<br><br>";
+    echo "Endereco: ".$value['endereco']."<br><br>";
+    echo "Cep: ".$value['cep']."<br><br>";
+    echo "Telefone: ".$value['telefone']."<br><br>";
+    echo "Celular: ".$value['celular']."<br><br>";
+    echo "Email: ".$value['email']."<br><br>";
+    echo "Senha: ".$value['senha']."<br><br>";
+    echo "Comentarios: ".$value['comentarios']."<br><br>";
+    
+}
+            
+            ?>
             </div>
             <!-- final do castrado do aluno -->
+            
+            
+            
         </section>
         <br>
         <br>
