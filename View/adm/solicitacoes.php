@@ -65,10 +65,10 @@
                         $resultado=$query->fetchAll();
                         foreach($resultado as $value){
                             
-                        echo "Nome: ". $value['comentarios']. ""  ?> <a class="container" href="../../controller/ControllerDeleteSolicitacoes.php?id=<?php echo $value['id'];?>"> <img src="../assets/images/icons8-excluir-lixeira-24.png"></a><br><?php
-                        echo "Cpf: ".$value['cpf']."<br>";
-                        echo "Renach: ".$value['renach']."<br>";
-                        echo "Renach: ".$value['comentarios']."<br>";
+                        echo "Nome: ". $value['comentarios']. ""  ?> <a class="container" href="../../controller/ControllerDeleteSolicitacoes.php?id=<?php echo $value['id'];?>"> <img src="../assets/images/icons8-excluir-lixeira-24.png"></a><br><?php      echo "<br>";
+                        echo "Cpf: ".$value['cpf']."<br><br>";
+                        echo "Renach: ".$value['renach']."<br><br>";
+                        echo "Solicitacoes: ".$value['comentarios']."<br><br>";
                         echo "<br><br>" ;
                         
                         

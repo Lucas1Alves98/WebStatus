@@ -19,3 +19,7 @@ $obj -> setComentarios($comentarios);
 $obj -> setRenach($renach);
 
 $sql->insert($con,$obj);
+
+ header("location: ../View/aluno/solicitacao.php");
+ 
+ ?>
