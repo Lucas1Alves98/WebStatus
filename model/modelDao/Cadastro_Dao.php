@@ -14,9 +14,14 @@ class Cadastro_Dao{
 }
 public function insert($con,$obj) {
 
-
+$query = $con->conectar()->prepare("select id from adm where cpf = :e");
+$query->bindValue(":e" ,$obj->getCpf());
+ $query->execute();
+ if($query->rowCount() > 0){
+   
+     return false;
+ }else{
   $query = $con->conectar()->prepare("insert into adm (nome,cpf,nascimento,sexo,endereco,cep,telefone,celular,email,senha,comentarios)values(:nome,:cpf,:nascimento,:sexo,:endereco,:cep,:telefone,:celular,:email,:senha,:comentarios)");
-
 
   $query->bindValue(":nome", $obj->getNome());
   $query->bindValue(":cpf", $obj->getCpf());
@@ -30,9 +35,15 @@ public function insert($con,$obj) {
   $query->bindValue(":senha", $obj->getSenha());
   $query->bindValue(":comentarios", $obj->getComentarios());
   
-  $query->execute();
+  $query->execute();   return true;
+  
+  
+ }
 }
  
   
   
-};
+}
+
+
+
