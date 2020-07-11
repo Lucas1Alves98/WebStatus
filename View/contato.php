@@ -78,22 +78,22 @@
                  Preencha o formulário abaixo para solicitar um orçamento e entraremos em contato com você o mais breve possível.
 				</p>
 				<br>
-					<form>
+					<form action="../controller/EmailController.php" method="POST" name="form_contato">
 						<div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Nome">
+								<input class="form-control" name="nome" type="text" placeholder="Nome">
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Email">
+								<input class="form-control" name="email" type="text" placeholder="Email">
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Telefone">
+								<input class="form-control" name="telefone" type="text" placeholder="Telefone">
 							</div>
 						</div>
 						<br>
 						<div class="row">
 							<div class="col-sm-12">
-								<textarea placeholder="Envie sua dúvida" class="form-control" rows="9"></textarea>
+								<textarea placeholder="Envie sua dúvida" name="mensagem" class="form-control" rows="9"></textarea>
 							</div>
 						</div>
 						<br>
