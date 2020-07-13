@@ -55,12 +55,7 @@
              <div class="text-f">
                 <form method="post" action=" ../../controller/controllerAquivos.php" enctype="multipart/form-data">
 
-                    <label> Nome Completo</label><br>
-                    <input type="text" name="nome" class="campo" maxlenght="40"  autofocus><br>
-                    <label>CPF</label> <br>
-                    <input type="text" name="cpf" class="campo" id="cpf" maxlenght="14">
-                    <br>
-
+                   
                     <label>Aulas Teóricas</label>
                     <br>
                     <input type="file" id="file1"name="arquivo">

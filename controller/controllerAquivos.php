@@ -1,11 +1,15 @@
 <?php
 
+include_once '../model/modelBean/Arquivo_Bean.php';
+include_once '../model/modelDao/Conexao.php';
+include_once '../model/modelDao/Arquivo_Dao.php';
+
 $arquivo = isset($_FILES['arquivo'])?$_FILES['arquivo']:"";
 $arquivo1 = isset($_FILES['arquivo1'])?$_FILES['arquivo1']:"";
         
 if(isset($_FILES['arquivo'])){
     $nome = $arquivo['name'];
-    $tiposPermitidos = ['jpg',' jpeg','png','doc'];
+    $tiposPermitidos = ['jpg',' jpeg','png','doc','pdf'];
     $tamanho = $arquivo['size'];
     
     $extensao = explode('.',$nome);
@@ -30,7 +34,7 @@ if(isset($_FILES['arquivo'])){
 
 if(isset($_FILES['arquivo1'])){
     $nome = $arquivo1['name'];
-    $tiposPermitidos = ['jpg',' jpeg','png','doc'];
+    $tiposPermitidos = ['jpg',' jpeg','png','doc','pdf'];
     $tamanho = $arquivo1['size'];
     
     $extensao = explode('.',$nome);
@@ -52,3 +56,16 @@ if(isset($_FILES['arquivo1'])){
     }
     
 }
+
+
+$obj = new Arquivo_Bean();
+$con = new Conexao();
+$sql = new Arquivo_Dao();
+
+$obj->setNovoNome($novoNome);
+$obj->setNovoNome1($novoNome1);
+
+
+$sql->Insert($obj,$con);
+
+
