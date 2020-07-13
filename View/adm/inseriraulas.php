@@ -53,19 +53,20 @@
             <br>
              <!-- formulário de Cadastro de Aluno -->
              <div class="text-f">
-                <form method="post" action="">
+                <form method="post" action=" ../../controller/controllerAquivos.php" enctype="multipart/form-data">
 
                     <label> Nome Completo</label><br>
-                    <input type="text" name="nome" class="campo" maxlenght="40" required autofocus><br>
+                    <input type="text" name="nome" class="campo" maxlenght="40"  autofocus><br>
                     <label>CPF</label> <br>
                     <input type="text" name="cpf" class="campo" id="cpf" maxlenght="14">
                     <br>
+
                     <label>Aulas Teóricas</label>
                     <br>
-                    <input type="file" id="file1"name="file1">
+                    <input type="file" id="file1"name="arquivo">
                     <br><br>
                     <label>Aulas Práticas</label><br>
-                    <input type="file" id="file2"name="file2">
+                    <input type="file" id="file2"name="arquivo1">
                     <br><br>
                     <input type="submit" value="Enviar" class="btn">
                     <input type="submit" value="Limpar" class="btn">

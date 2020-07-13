@@ -90,7 +90,7 @@
                 
                  $query->execute();  
 
-$result = $query->fetchAll();//convertendo querry em strinfg
+$result = $query->      ();//convertendo querry em strinfg
 
 foreach ($result as $value ){
     echo "Nome: ".$value['nome']."<br><br>";
