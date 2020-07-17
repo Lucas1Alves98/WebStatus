@@ -42,8 +42,12 @@
                 <h1>Avisos da Auto Escola</h1>
             </div>
             <br>
-            <div class="text-f">
+           
             <form method="post" action="../../controller/AvisosController.php">
+
+            
+            
+            <div class="avisos">
             <?php
                         require_once '../../model/modelDao/Conexao.php';
                         
@@ -54,18 +58,27 @@
                         $query->execute();
                         $resultado=$query->fetchAll();
                         foreach($resultado as $value){
-                       
-                      echo "Avisos:". $value['comentarios']. ""  ?> <a class="container" href="../../controller/ControllerDelete.php?id=<?php echo $value['id'];?>"> <img src="../assets/images/icons8-excluir-lixeira-24.png"></a><br> <br><?php
-               
-                        }
+                            
+                            $id = $value['id'];
+                            $texto = $value['comentarios'];
+                            
+                            echo "<div class=\"retangulo\">
+                            <a href=\"../../controller/ControllerDelete.php?id=$id\">
+                                <img src=\"../assets/images/icons8-excluir-lixeira-24.png\">
+                            </a>
+                            <div class=\"textprincipal\">Avisos: </div> <div class =\"texto\"> $texto</div>
+                            </div>";
+
+                        
+                    }
                     
                     ?>
+            </div>         
                     
-                    </div>
             <!-- formulário de Cadastro de Aluno -->
            
-                    </div>
-            </div>
+                    
+           
             <!-- final do castrado do aluno -->
         </section>
 

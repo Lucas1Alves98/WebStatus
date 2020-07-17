@@ -8,32 +8,32 @@ require_once '../model/modelDao/Conexao.php';
 $obj = new AcessoUsuario();
 $con = new Conexao();
 
-//Pegando as informações do input do usuario
+//Pegando as informaï¿½ï¿½es do input do usuario
 
-$cpf = filter_input(INPUT_POST,'cpf');
+$email = filter_input(INPUT_POST,'email');
 $senha = filter_input(INPUT_POST,'senha');
 
-//Setando as informações para a classe AcessoUsuario
+//Setando as informaï¿½ï¿½es para a classe AcessoUsuario
 
-$obj->setCpf($cpf);
+$obj->setEmail($email);
 $obj->setSenha($senha);
 
-//Validando acesso do usuário, fazendo uma consulta se o usuário existe no banco de dados
+//Validando acesso do usuï¿½rio, fazendo uma consulta se o usuï¿½rio existe no banco de dados
 
-$query = $con->conectar()->prepare("select * from adm where cpf = :cpf and senha = :senha");
+$query = $con->conectar()->prepare("select * from adm where email = :email and senha = :senha");
 
-$query->bindValue (":cpf" , $obj->getCpf());
+$query->bindValue (":email" , $obj->getEmail());
 $query->bindValue (":senha" , $obj->getSenha());
 
 $query->execute();
 
-//Verificando se é encotrado algum usuário
+//Verificando se ï¿½ encotrado algum usuï¿½rio
 
 if($query->rowCount() != 0){
     
- $query = $con->conectar()->prepare("select * from adm where cpf = :cpf and senha = :senha");
+ $query = $con->conectar()->prepare("select * from adm where email = :email and senha = :senha");
  
- $query->bindParam (":cpf" ,$obj->getCpf() );
+ $query->bindParam (":email" ,$obj->getEmail() );
  $query->bindParam (":senha" ,$obj->getSenha() );
  
  $query->execute();

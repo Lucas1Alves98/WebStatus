@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-
+<head>
     <link rel="shortcut icon" href="./images/gt_favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,29 +7,24 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/jquery.mask.min.js"></script>
-   <!--- Identificar os digitos -->
-    <!--- <script type="text/javascript">
-        $(document).ready(function(){
-            $("#cpf").mask("000.000.000-00")
-           
-
-        })
-    </script>-->
-    
     <title>Area do administrador</title>
 </head>
-<header>
-    <div class="header-area">
-        <div class="logo">
-            <a href="#">
-                <img src="./images/logoadm.png" alt="">
-            </a>
-        </div>
-</header>
 <body>
-    
+    <script>
+        $(document).ready(function() {
+            $("#cpf").mask("000.000.000-00")
+        })
+    </script>
+    <header>
+        <div class="header-area">
+            <div class="logo">
+                <a href="#">
+                    <img src="./images/logoadm.png" alt="">
+                </a>
+            </div>
+    </header>
     <!--começo do  Menu -->
-    <div class="container">
+    <div style="height: 90%;" class="container">
         <nav>
             <ul class="menu">
                 <a href="adm.php">
@@ -63,70 +57,34 @@
             <!-- formulário de Cadastro de Aluno -->
             <div class="text-f">
                 <form method="post" action="buscar.php">
-
-                   
                     <label>CPF do Aluno</label> <br>
-                    <input type="text" name="Pesquisa" class="campo"  maxlenght="14">
-                    <br>
-    
-
-
+                    <input id="cpf" type="text" name="Pesquisa" class="campo"  maxlenght="14"><br>
                     <input type="submit" value="Buscar" class="btn">
-                    <input type="reset" value="Limpar" class="btn">
-                    <br>
-                    <br>
+                    <input type="reset" value="Limpar" class="btn"><br><br>
                 </form>
-              
                 <?php
                 require_once '../../model/modelDao/Conexao.php';
-                  
                 $con = new Conexao();
-                
-                $Pesquisa = filter_input(INPUT_POST,'Pesquisa');
-                
-                $query = $con->conectar()->prepare("select * from adm where cpf = :cpf");
-                
-                $query->bindValue(":cpf" , $Pesquisa);
-                
-                 $query->execute();  
-
-$result = $query->      ();//convertendo querry em strinfg
-
-foreach ($result as $value ){
-    echo "Nome: ".$value['nome']."<br><br>";
-    echo "Cpf: ".$value['cpf']."<br><br>";
-    echo "Nascimento: ".$value['nascimento']."<br><br>";
-    echo "Sexo: ".$value['sexo']."<br><br>";
-    echo "Endereco: ".$value['endereco']."<br><br>";
-    echo "Cep: ".$value['cep']."<br><br>";
-    echo "Telefone: ".$value['telefone']."<br><br>";
-    echo "Celular: ".$value['celular']."<br><br>";
-    echo "Email: ".$value['email']."<br><br>";
-    echo "Senha: ".$value['senha']."<br><br>";
-    echo "Comentarios: ".$value['comentarios']."<br><br>";
-    
-}
-            
-            ?>
+                $Pesquisa = filter_input(INPUT_POST, 'Pesquisa');
+                $query = $con->conectar()->prepare('select * from adm where cpf = :cpf');
+                $query->bindValue(':cpf', $Pesquisa);
+                $query->execute();
+                $result = $query->fetchAll();//convertendo querry em strinfg
+                foreach ($result as $value) {
+                    echo 'Nome: ' . $value['nome'] . '<br><br>';
+                    echo 'Cpf: ' . $value['cpf'] . '<br><br>';
+                    echo 'Nascimento: ' . $value['nascimento'] . '<br><br>';
+                    echo 'Sexo: ' . $value['sexo'] . '<br><br>';
+                    echo 'Endereco: ' . $value['endereco'] . '<br><br>';
+                    echo 'Cep: ' . $value['cep'] . '<br><br>';
+                    echo 'Telefone: ' . $value['telefone'] . '<br><br>';
+                    echo 'Celular: ' . $value['celular'] . '<br><br>';
+                    echo 'Email: ' . $value['email'] . '<br><br>';
+                    echo 'Senha: ' . $value['senha'] . '<br><br>';
+                    echo 'Comentarios: ' . $value['comentarios'] . '<br><br>';
+                }
+            ?> 
             </div>
-            <!-- final do castrado do aluno -->
-            
-            
-            
         </section>
-        <br>
-        <br>
-
-</body>
-
-
-
-</html>
-    
-
-
-
-
-
 </body>
 </html>

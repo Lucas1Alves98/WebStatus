@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/Paluno.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#cpf").mask("000.000.000-00")
+           
+            $("#cep").mask("00.000-000")
+           
+
+        })
+    </script>
     <title>Portal do Aluno</title>
 </head>
 <header>

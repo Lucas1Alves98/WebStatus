@@ -45,7 +45,7 @@
            
             <!-- formulário de Cadastro de Aluno -->
             <div class="text-f">
-                <form method="post" action="../Controller/cadastro.php">
+                <form method="post" action="../controller/.php">
                 
                     <div class="logoimg">
                         <a href="www.google.com"><p><img src="./images/iconpdf.png"width="200" height="200"></a>

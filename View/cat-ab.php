@@ -79,7 +79,7 @@
 				<div class="row widget">
 					<div class="col-xs-12">
 						<h4></h4>
-						<p><img src="assets/images/image-ab.jpg" alt=""></p>
+						<p><img src="assets/images/carro2.jpg" alt=""></p>
 					</div>
 				</div>
 

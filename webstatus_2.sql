@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Jul-2020 às 15:17
+-- Tempo de geração: 15-Jul-2020 às 22:48
 -- Versão do servidor: 10.4.8-MariaDB
 -- versão do PHP: 7.1.33
 
@@ -50,8 +50,10 @@ CREATE TABLE `adm` (
 INSERT INTO `adm` (`id`, `nome`, `cpf`, `nascimento`, `sexo`, `endereco`, `cep`, `telefone`, `celular`, `email`, `senha`, `comentarios`) VALUES
 (15, 'c', 123, 2103, 'Masculino', 'adsw', 34, 234, 123456, 'carloseduardozero0@g', '123', '                 pegou\r\n                '),
 (16, 'Lucas Alves De Carvalho', 2147483647, 21122000, 'Masculino', 'xesquelededodereguej', 21122112, 123456789, 123456789, 'ainhaaaa@gmail.com', '123456789', '                     Comente aqui...\r\n  '),
-(24, '123456', 123, 123456, 'Masculino', '123456', 12, 123456, 123456, '123@456', '123456', '123456\r\n                \r\n              '),
-(25, 'jamal', 742, 7417441, 'Masculino', '741741', 74, 7417417, 7417417, 'lucas2@gmail.com', '741741741', '                     7417417441\r\n       ');
+(25, 'jamal', 742, 7417441, 'Masculino', '741741', 74, 7417417, 7417417, 'lucas2@gmail.com', '741741741', '                     7417417441\r\n       '),
+(26, 'jose', 456789, 12211221, 'Masculino', 'wewqeqwewq', 55, 456854651, 564854984, 'we@ewe', '987654321', '                \r\n             pegou   \r'),
+(27, 'Mike', 789456, 21, 'Masculino', 'fdsafsdfdsaf', 30, 123456, 0, 'lucas2@gmail.com', '121212', '        Testando 123        \r\n          '),
+(28, 'jonatas', 456, 456123, 'Masculino', 'rua11demaio', 46, 456123, 456123, 'lucas2@gmail.com', '456123', '                \r\n               Testand');
 
 -- --------------------------------------------------------
 
@@ -75,6 +77,28 @@ INSERT INTO `administrador` (`id`, `email`, `senha`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `avisos`
+--
+
+CREATE TABLE `avisos` (
+  `id` int(11) NOT NULL,
+  `comentarios` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `avisos`
+--
+
+INSERT INTO `avisos` (`id`, `comentarios`) VALUES
+(3, '                     \r\n                \r\n                 teste 2 '),
+(5, '                     \r\n                \r\n      Importante , prova dia ..... '),
+(6, '                     \r\n                \r\n                  Testando 123'),
+(7, '                     \r\n                \r\n                 ATENÇÃO AMANHA SERÁ O PFC, BOA SORTE '),
+(8, '                     \r\n                \r\n       Testando 123           ');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `solicitacao`
 --
 
@@ -91,12 +115,9 @@ CREATE TABLE `solicitacao` (
 --
 
 INSERT INTO `solicitacao` (`id`, `nome`, `cpf`, `renach`, `comentarios`) VALUES
-(1, 'Xolinha', 2147483647, '123456789', '                     Comente aqui...\r\n                \r\n                  hdaishgogaygosau'),
-(2, 'Xolinha', 2147483647, '123456789', '                     Comente aqui...\r\n                \r\n            uhufsafda      '),
-(3, 'Lucas Alves De Carvalho', 2147483647, '1000000000', '                 Pegou\r\n                  '),
-(4, 'jamal', 0, 'dsad', '                     Comente aqui...\r\n                \r\n                  '),
-(5, 'Carlos', 2147483647, '7777777', 'voce é branco bro scr\r\n                \r\n                  '),
-(6, 'Lucas Alves De Carvalho', 888888, '1000000000', '               Solicito o cancelamento da inscrição\r\n                \r\n                  ');
+(6, 'Lucas Alves De Carvalho', 888888, '1000000000', '               Solicito o cancelamento da inscrição\r\n                \r\n                  '),
+(7, 'jonatas', 456123, '123456', '                     \r\n                \r\n          Testando 123        '),
+(8, 'Leandro Alves', 999999, '9999999999', '                     \r\n                \r\n         Solicito o Cancelamento de matrícula         ');
 
 -- --------------------------------------------------------
 
@@ -137,6 +158,12 @@ ALTER TABLE `administrador`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `avisos`
+--
+ALTER TABLE `avisos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `solicitacao`
 --
 ALTER TABLE `solicitacao`
@@ -156,7 +183,7 @@ ALTER TABLE `teste`
 -- AUTO_INCREMENT de tabela `adm`
 --
 ALTER TABLE `adm`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT de tabela `administrador`
@@ -165,10 +192,16 @@ ALTER TABLE `administrador`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT de tabela `avisos`
+--
+ALTER TABLE `avisos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
 -- AUTO_INCREMENT de tabela `solicitacao`
 --
 ALTER TABLE `solicitacao`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `teste`

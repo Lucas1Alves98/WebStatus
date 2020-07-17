@@ -106,13 +106,13 @@
 				</div>
 				<div class="row widget">
 					<div class="col-xs-12">
-						<p><img src="assets/images/teste.jpg" alt=""></p>
+						<p><img src="assets/images/bomfim.jpg" alt=""></p>
 					</div>
 				</div>
 				<div class="row widget">
 					<div class="col-xs-12">
 						<h4></h4>
-						<p><img src="assets/images/bomfim.jpg" alt=""></p>
+						<p><img src="assets/images/carro1.jpg" alt=""></p>
 						<p>Nossa área para os alunos aprenderem a conduzir o veiculo da autoescola status é na cidade baixa</p>
 					</div>
 				</div>

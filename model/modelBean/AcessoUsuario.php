@@ -3,7 +3,7 @@
 class AcessoUsuario {
 
     private $senha;
-    private $cpf;
+    private $email;
 
     
    
@@ -11,16 +11,16 @@ class AcessoUsuario {
         return $this->senha;
     }
 
-    function getCpf() {
-        return $this->cpf;
+    function getEmail() {
+        return $this->email;
     }
 
     function setSenha($senha) {
         $this->senha = $senha;
     }
 
-    function setCpf($cpf) {
-        $this->cpf = $cpf;
+    function setEmail($email) {
+        $this->email = $email;
     }
 
 

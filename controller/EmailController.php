@@ -62,4 +62,7 @@ if($Mailer->Send()){
 var_dump($Erro);
 
 
+ header("location: ../View/contato.php");
+
+    
 

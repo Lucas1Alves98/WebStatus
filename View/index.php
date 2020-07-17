@@ -160,7 +160,7 @@
 		
 			 <p class="text-right">
 				 
-				 <a class="btn btn-primary btn-large">ORÇAMENTO»</a></p>
+				 <a href="./contato.php" class="btn btn-primary btn-large">ORÇAMENTO»</a></p>
 				 
 			 <p><img src="assets/images/sinalito-m.png" alt=""></p>
 			 

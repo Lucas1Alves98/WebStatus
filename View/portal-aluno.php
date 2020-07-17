@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
@@ -62,7 +62,7 @@
 
 		<ol class="breadcrumb">
 			<li><a href="index.php">Início</a></li>
-			<li class="active">�?rea do Aluno</li>
+			<li class="active">Area do Aluno</li>
 		</ol>
 
 		<div class="row">
@@ -82,8 +82,8 @@
 							
                                                         <form method="post" action="../controller/ControllerAcesso.php">
 								<div class="top-margin">
-									<label>CPF <span class="text-danger">*</span></label>
-                                                                        <input type="text" name="cpf" class="form-control">
+									<label>Email <span class="text-danger">*</span></label>
+                                                                        <input type="text" name="email" class="form-control">
 								</div>
 								<div class="top-margin">
 									<label>Senha <span class="text-danger">*</span></label>
@@ -144,7 +144,7 @@
 					<div class="col-md-6 widget">
 						<h3 class="widget-title">Confira nossos serviços</h3>
 						<div class="widget-body">
-							<p>Oferecemos serviços de formação de condutores e treinamentos para aquisição da primeira CNH nas categorias “A�? e “B�?, para renovação de CNH, para adição ou mudança de categorias.</p>
+							<p>Oferecemos serviços de formação de condutores e treinamentos para aquisição da primeira CNH nas categorias “A e “B, para renovação de CNH, para adição ou mudança de categorias.</p>
 						</div>
 					</div>
 
